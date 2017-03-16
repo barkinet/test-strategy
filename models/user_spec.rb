@@ -2,6 +2,8 @@ require 'rails_helper'
 require 'support/example_custom_matcher'
 
 describe User do
+  let!(:user) { create :user }
+
   describe '#class_method' do
     context 'changing_variable is present' do
 
